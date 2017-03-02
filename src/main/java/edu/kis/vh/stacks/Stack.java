@@ -37,15 +37,9 @@ public class Stack {
         return total;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
 
     public int[] getItems() {
         return items;
     }
 
-    public void setItems(int[] items) {
-        this.items = items;
-    }
 }
