@@ -4,6 +4,8 @@ import edu.kis.vh.stacks.Stack;
 import org.junit.Assert;
 import org.junit.Test;
 
+//bledy nie wystepuja poniewaz przed kazdym commitem sprawdzana byla poprawnosc dokonanych zmian przy uzyciu nizej zamieszczonych testow
+
 public class StackTest {
 
     @Test public void testPush() {

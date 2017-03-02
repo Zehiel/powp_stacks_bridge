@@ -5,15 +5,23 @@ public class StackHanoi extends Stack {
     private int totalRejected = 0;
 
     public int reportRejected() {
-        return totalRejected;
+        return getTotalRejected();
     }
 
     @Override
     public void push(int in) {
         if (!isEmpty() && in > top())
-            totalRejected++;
+            setTotalRejected(getTotalRejected() + 1);
         else
             super.push(in);
+    }
+
+    public int getTotalRejected() {
+        return totalRejected;
+    }
+
+    public void setTotalRejected(int totalRejected) {
+        this.totalRejected = totalRejected;
     }
 
     //w srodowisku IntelliJ IDEA odpowiednik skrótu alt+ <- to ctrl+shift+backspace
