@@ -1,6 +1,5 @@
 package edu.kis.vh.stacks.unittests;
 
-import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 import org.junit.Assert;
