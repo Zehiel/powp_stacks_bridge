@@ -1,5 +1,8 @@
 package edu.kis.vh.stacks;
 
+/**
+ * Class implementing functionality of stack
+ */
 public class Stack {
 
     private static final int EMPTY_STACK_INDICATOR = -1;
@@ -7,25 +10,50 @@ public class Stack {
 
     private int total = EMPTY_STACK_INDICATOR;
 
+    /**
+     * puts value on the top of the stack
+     * @param i - value of type integer to be pushed into stack
+     * modifies:items
+     */
     public void push(int i) {
         if (!isFull())
             getItems()[++total] = i;
     }
 
+    /**
+     * Return boolean indicating if stack is empty
+     * @return boolean - true if stack is empty, false if not
+     * modifies:none
+     */
     public boolean isEmpty() {
         return total == EMPTY_STACK_INDICATOR;
     }
 
+    /**
+     * Returns boolean indicating if stack is full
+     * @return boolean - true if stack is full, false if not
+     * modifies:none
+     */
     public boolean isFull() {
         return total == getItems().length - 1;
     }
 
+    /**
+     * returns value on the top of the stack, doesn't modify stack
+     * @return value on top of the stack
+     * modifies:none
+     */
     public int top() {
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
         return getItems()[total];
     }
 
+    /**
+     * takes value on the top of the stack, modifies stack
+     * @return value on top of the stack
+     * modifies:items
+     */
     public int pop() {
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
