@@ -32,4 +32,9 @@ public class Stack {
         return items[total--];
     }
 
+    //dzialanie enkapsulacji pola w intelij uniemozliwilo automatyczna generacje gettera dla tego przykladu
+    public int getTotal() {
+        return total;
+    }
+
 }
