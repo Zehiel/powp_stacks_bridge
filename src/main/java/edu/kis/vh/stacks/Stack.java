@@ -44,6 +44,7 @@ public class Stack {
      * modifies:none
      */
     public int top() {
+        //TODO Exception based handling
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
         return getItems()[total];
@@ -55,6 +56,7 @@ public class Stack {
      * modifies:items
      */
     public int pop() {
+        //TODO Exception based handling
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
         return getItems()[total--];

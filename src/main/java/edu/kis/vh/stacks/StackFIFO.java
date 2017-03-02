@@ -4,6 +4,8 @@ public class StackFIFO extends Stack {
 
     private Stack temp = new Stack();
 
+    //TODO simplify using ArrayDeque? Possible performance gain
+
     @Override
     public int pop() {
 
