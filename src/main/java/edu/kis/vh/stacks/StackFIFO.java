@@ -1,10 +1,13 @@
 package edu.kis.vh.stacks;
 
+
 import edu.kis.vh.stacks.list_array.StackList;
 
 public class StackFIFO extends Stack {
 
-    private IStack temp = new Stack();
+    private IStack temp = new StackList();
+
+    //Lepszy bedzie StackList poniewaz przechowuje on ostatni element w latwo dostepny sposob
 
     //TODO simplify using ArrayDeque? Possible performance gain
 
