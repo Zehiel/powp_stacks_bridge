@@ -1,4 +1,4 @@
-package edu.kis.vh.stacks.list;
+package edu.kis.vh.stacks.list_array;
 
 import edu.kis.vh.stacks.IStack;
 

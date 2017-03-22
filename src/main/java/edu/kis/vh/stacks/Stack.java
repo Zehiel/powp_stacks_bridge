@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.list_array.StackList;
 
 /**
  * Class implementing functionality of stack
