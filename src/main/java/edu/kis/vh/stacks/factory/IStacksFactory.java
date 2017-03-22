@@ -4,7 +4,7 @@ import edu.kis.vh.stacks.IStack;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
-interface IStacksFactory {
+public interface IStacksFactory {
 
     IStack getStandardStack();
     //TODO Implementation of FalseStack - same as in DefaultStackFactory
