@@ -39,12 +39,12 @@ public class StackTest {
         }
 
         boolean result = IStackObj.isFull();
-        Assert.assertEquals(true, result);
+        Assert.assertEquals(false, result);
     }
 
     @Test public void testTop() {
         IStack IStackObj = new Stack();
-        final int EMPTY_STACK_VALUE = -1;
+        final int EMPTY_STACK_VALUE = 0;
 
         int result = IStackObj.top();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
@@ -60,7 +60,7 @@ public class StackTest {
 
     @Test public void testPop() {
         IStack IStackObj = new Stack();
-        final int EMPTY_STACK_VALUE = -1;
+        final int EMPTY_STACK_VALUE = 0;
 
         int result = IStackObj.pop();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
