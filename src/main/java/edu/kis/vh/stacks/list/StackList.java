@@ -1,6 +1,8 @@
 package edu.kis.vh.stacks.list;
 
-public class StackList {
+import edu.kis.vh.stacks.IStack;
+
+public class StackList implements IStack {
 
 	/*
 	Using InteliJ IDEA

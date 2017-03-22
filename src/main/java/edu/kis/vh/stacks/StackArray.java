@@ -3,7 +3,7 @@ package edu.kis.vh.stacks;
 /**
  * Created by grusz on 16.03.2017.
  */
-public class StackArray {
+public class StackArray implements IStack {
     private static final int EMPTY_STACK_INDICATOR = -1;
     private int[] items = new int[12]; //bezposrednie odniesienia do zmiennej zostaly zastapione wywolaniem getterow/setterow
 
@@ -14,6 +14,7 @@ public class StackArray {
      * @param i - value of type integer to be pushed into stack
      * modifies:items
      */
+    @Override
     public void push(int i) {
         if (!isFull())
             getItems()[++total] = i;
@@ -24,6 +25,7 @@ public class StackArray {
      * @return boolean - true if stack is empty, false if not
      * modifies:none
      */
+    @Override
     public boolean isEmpty() {
         return total == EMPTY_STACK_INDICATOR;
     }
@@ -33,6 +35,7 @@ public class StackArray {
      * @return boolean - true if stack is full, false if not
      * modifies:none
      */
+    @Override
     public boolean isFull() {
         return total == getItems().length - 1;
     }
@@ -42,6 +45,7 @@ public class StackArray {
      * @return value on top of the stack
      * modifies:none
      */
+    @Override
     public int top() {
         //TODO Exception based handling
         if (isEmpty())
@@ -54,6 +58,7 @@ public class StackArray {
      * @return value on top of the stack
      * modifies:items
      */
+    @Override
     public int pop() {
         //TODO Exception based handling
         if (isEmpty())
