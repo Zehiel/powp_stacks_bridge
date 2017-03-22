@@ -1,6 +1,7 @@
 package edu.kis.vh.stacks;
 
 
+import edu.kis.vh.stacks.list_array.StackArray;
 import edu.kis.vh.stacks.list_array.StackList;
 
 public class StackFIFO extends Stack {
@@ -14,6 +15,11 @@ public class StackFIFO extends Stack {
 
     public StackFIFO(StackList stackList) {
         super(stackList);
+
+    }
+
+    public StackFIFO(StackArray stackArray) {
+        super(stackArray);
 
     }
 

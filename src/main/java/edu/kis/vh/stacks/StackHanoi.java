@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list_array.StackArray;
 import edu.kis.vh.stacks.list_array.StackList;
 
 public class StackHanoi extends Stack {
@@ -8,6 +9,10 @@ public class StackHanoi extends Stack {
 
     public StackHanoi(StackList stackList) {
         super(stackList);
+    }
+
+    public StackHanoi(StackArray stackArray){
+        super(stackArray);
     }
 
     public StackHanoi() {

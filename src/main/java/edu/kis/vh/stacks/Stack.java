@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list_array.StackArray;
 import edu.kis.vh.stacks.list_array.StackList;
 
 /**
@@ -14,34 +15,38 @@ public class Stack implements IStack {
     //zas metoda z przyciskiem control ma ten sam skutek co metoda ze znalezieniem deklaracji i jest zdecydowanie szybsza
     //a co za tym idzie lepsza do dynamicznej pracy gdy poruszamy sie po projekcie
 
-    private StackList stackList;
+    private IStack stack;
 
-    public Stack(StackList stackList) {
-        this.stackList = stackList;
+    public Stack(StackList stack) {
+        this.stack = stack;
+    }
+
+    public Stack(StackArray stack){
+        this.stack = stack;
     }
 
     public Stack(){
-        this.stackList = new StackList();
+        this.stack = new StackList();
     }
 
     public void push(int i) {
-        stackList.push(i);
+        stack.push(i);
     }
 
     public boolean isEmpty() {
-        return stackList.isEmpty();
+        return stack.isEmpty();
     }
 
     public boolean isFull() {
-        return stackList.isFull();
+        return stack.isFull();
     }
 
     public int top() {
-        return stackList.top();
+        return stack.top();
     }
 
     public int pop() {
-        return stackList.pop();
+        return stack.pop();
     }
 
 
