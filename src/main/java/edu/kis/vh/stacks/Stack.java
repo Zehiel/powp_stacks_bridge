@@ -5,7 +5,7 @@ import edu.kis.vh.stacks.list.StackList;
 /**
  * Class implementing functionality of stack
  */
-public class Stack {
+public class Stack implements IStack {
 
     private StackList stackList;
 
