@@ -6,7 +6,6 @@ import edu.kis.vh.stacks.IStack;
  * Created by grusz on 16.03.2017.
  */
 public class StackArray implements IStack {
-    private static final int EMPTY_STACK_INDICATOR = -1;
     private int[] items = new int[12]; //bezposrednie odniesienia do zmiennej zostaly zastapione wywolaniem getterow/setterow
 
     private int total = EMPTY_STACK_INDICATOR;
