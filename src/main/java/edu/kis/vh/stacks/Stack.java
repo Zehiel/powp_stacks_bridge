@@ -7,6 +7,9 @@ import edu.kis.vh.stacks.list.StackList;
  */
 public class Stack implements IStack {
 
+    //Brak konsekwencji dla funkcjonowania programu
+    //Latwiejsze utrzymanie kodu (Interfejs)
+
     private StackList stackList;
 
     public Stack(StackList stackList) {
