@@ -2,6 +2,14 @@ package edu.kis.vh.stacks.list;
 
 public class StackList {
 
+	/*
+	Using InteliJ IDEA
+	Used:
+	 Refactor -> Rename
+	 Navigate -> Implementation
+	 Navigate -> Declaration
+	 */
+
 	Node last;
 	int i;
 
